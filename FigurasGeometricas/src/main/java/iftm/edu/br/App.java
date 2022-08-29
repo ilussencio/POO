@@ -3,7 +3,8 @@ package iftm.edu.br;
 import java.util.Scanner;
 
 public class App {
-    public static void main(String[] args){
+
+    public static void menu(){
         Scanner scan = new Scanner(System.in);
         double lado,base,altura,xc,yc,raio;
         int opcao=0;
@@ -52,5 +53,9 @@ public class App {
             }
 
         }
+        scan.close();
+    }
+    public static void main(String[] args){
+        menu();
     }
 }

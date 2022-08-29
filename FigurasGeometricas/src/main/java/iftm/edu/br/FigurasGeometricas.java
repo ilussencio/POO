@@ -35,7 +35,7 @@ public class FigurasGeometricas {
     }
 
     public double areaCirculo(){
-        return 3.14*(raio*raio);
+        return Math.PI*(Math.pow(raio, 2));
     }
 
     public void exibirQuadrado(){
