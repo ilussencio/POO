@@ -5,6 +5,7 @@ public class Pessoa <T,U>{
     private T cpf;
     private U rg;
 
+
     public Pessoa(String nome, T cpf, U rg) {
         this.nome = nome;
         this.cpf = cpf;

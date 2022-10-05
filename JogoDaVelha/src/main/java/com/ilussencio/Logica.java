@@ -10,26 +10,21 @@ public class Logica {
     //CONTRUTOR
     public Logica() {
     }
-
     public Logica(int[][] tabuleiro, int[] pos, int jogador) {
         this.tabuleiro = tabuleiro;
         this.pos = pos;
         this.jogador = jogador;
     }
-
     //GETTER E SETER
     public int[][] getTabuleiro() {
         return tabuleiro;
     }
-
     public void setTabuleiro(int[][] tabuleiro) {
         this.tabuleiro = tabuleiro;
     }
-
     public int getJogador() {
         return jogador;
     }
-
     //METODOS
     //REGISTRA JOGADA
     public boolean jogada(int pos[], int jogador) {
@@ -42,11 +37,9 @@ public class Logica {
             return false;
         }
     }
-
     public boolean ocupacao() {
         return (tabuleiro[pos[0]][pos[1]] == 0) ? true : false;
     }
-
     public boolean velha(){
         for(int i =0; i < 3; i ++){
             for(int j = 0; j < 3; j ++){
@@ -84,7 +77,6 @@ public class Logica {
 
         return false;
     }
-
     public String viewTabuleiro(){
         StringBuilder string = new StringBuilder();
         for(int i = 0; i < 3; i ++){
@@ -102,7 +94,6 @@ public class Logica {
             }
             string.append("\n");
         }
-        //JOptionPane.showConfirmDialog(null, string);
         return string.toString();
     }
 }
