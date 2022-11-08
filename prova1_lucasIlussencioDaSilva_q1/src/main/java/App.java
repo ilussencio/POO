@@ -23,7 +23,6 @@ public class App {
         Scanner scan = new Scanner(System.in);
 
         int opcao;
-        double valor;
         Double limiteEspecial;
         ContaCorrente conta;
 
@@ -46,8 +45,6 @@ public class App {
             limiteEspecial = scan.nextDouble();
             conta = new ContaCorrente(nome,numeroConta,saldo,tipoDaConta,limiteEspecial);
         }
-
-
 
         do{
             menu();

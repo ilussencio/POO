@@ -22,6 +22,7 @@ public class ContaCorrente {
         this.limiteEspecial = limiteEspecial;
     }
 
+    //METODOS GETTERS
     public String getNome() {
         return nome;
     }
@@ -42,6 +43,7 @@ public class ContaCorrente {
         return saldo;
     }
 
+    //METODOS SETTERS
     public void setSaldo(Double saldo) {
         this.saldo = saldo;
     }
@@ -61,7 +63,7 @@ public class ContaCorrente {
     public void setLimiteEspecial(Double limiteEspecial) {
         this.limiteEspecial = limiteEspecial;
     }
-
+    //METODOS
     public void depositar(Double valor){
         this.saldo += ( valor - (0.001*valor) );
         System.out.printf("Deposito de R$ %.2f realizado com sucesso!\n", valor);
