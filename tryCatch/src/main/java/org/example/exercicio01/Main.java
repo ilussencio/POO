@@ -1,4 +1,4 @@
-package org.example;
+package org.example.exercicio01;
 
 import java.util.Scanner;
 
@@ -20,6 +20,6 @@ public class Main {
         }catch (IllegalAccessException e){
             System.out.println("SAQUE INVALIDO!");
         }
-        
+
     }
 }
