@@ -2,13 +2,11 @@ package com.exercicio04;
 
 import com.exercicio02.Universidade;
 
-import java.util.ArrayList;
-
 public class Departamento {
     private String nome;
     private Universidade universidade;
 
-    public Departamento(){}
+    public Departamento(String nome, com.exercicio04.Universidade universidade){}
 
     public Departamento(String nome, Universidade universidade) {
         this.nome = nome;
